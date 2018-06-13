@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- cdn(content delivery network) for bootstrap -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"  rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" rel="text/javascript">
+    <link href="survey.css" rel="stylesheet">
+</head>
+<body>
+
+    <header class="container-fluid">
+    <h1 id="title">Survey Form</h1>
+    </header>
+    <div class="container">
+        <div class="jumbotron">
+    <p id="description">Let us know how we can improve Free Code camp</p>
+    <form id="survey-form">
+
+        <div class="row">
+            <div class="col-md-6">
+                <label id="name-label">* Name</label>
+                
+            </div>
+            <div class="col-md-3" ><input  id="name" placeholder=" Enter your Name" class="form-control" > </div>  
+                    
+        </div>
+        
+
+        <div class="row">
+                <div class="col-md-6"><label id="email-label">* Email</label></div>
+                <div class="col-md-3"><input  type="email" id="email" placeholder="Enter your Email" class="form-control" ></div>
+        </div>
+        <div class="row">
+                <div class="col-md-6"> <label id="number-label">* Age</label></div>
+                <div class="col-md-3"><input type="number" id="number" max="125" placeholder="Enter your Age" class="form-control"></div>
+
+        </div>
+        <div class="row">
+                <div class="col-md-6"> <label>which option best describes your current role ?</label></div>
+                <div class="col-md-3">
+                <select class="form-control" id="dropdown">
+                <option >Select an option</option>     
+                <option selected="selected">Student</option>        
+                <option>Student</option>
+                <option>Student</option>
+                </select>        
+                </div>
+
+        </div>
+        <div class="row">
+            <div class="col-md-2"></div>
+                <div class="col-md-4"> <label>How likely is that you would recommend freeCodeCamp to a friend?</label></div>
+                <div class="col-md-6 vertical-radiobutttons" >
+                       <div class="row"> <input  type="radio" name="group1" > <label style="text-align: left">Definitely</label></div>
+                       <div class="row"> <input  type="radio" name="group1" > <label style="text-align: left">Maybe</label></div>
+                       <div class="row"> <input  type="radio" name="group1" > <label style="text-align: left">Not Sure</label></div>
+                </div>    
+                  
+        </div>      
+        <div class="row">
+                <div class="col-md-6"> <label>what do you like most in FCC ?</label></div>
+                <div class="col-md-3">
+                <select class="form-control" id="most-like">
+                        <option disabled selected value>Select an option</option>
+                        <option value="challenges">Challenges</option>
+                        <option value="projects">Projects</option>
+                        <option value="community">Community</option>
+                        <option value="openSource">Open Source</option>
+                </select>        
+                </div>
+
+        </div>
+        <div class="row">
+                <div class="col-md-2"></div>
+                    <div class="col-md-4"> <label>Things that should be improved in the future (check all that apply).</label></div>
+                    <div class="col-md-6 vertical-radiobutttons" >
+                           <div class="row"> <input  type="checkbox"  value="Front-end Projects"> <label style="text-align: left">Front-end Projects</label></div>
+                           <div class="row"> <input  type="checkbox"value="Back-end Projects" > <label style="text-align: left">Back-end Projects</label></div>
+                           <div class="row"> <input  type="checkbox" value="Data Visualization" > <label style="text-align: left">Data Visualization</label></div>
+                           <div class="row"> <input  type="checkbox" value="Challenges" > <label style="text-align: left">Challenges</label></div>
+                           <div class="row"> <input  type="checkbox" value="Open Source Community" > <label style="text-align: left">Open Source Community</label></div>
+                           <div class="row"> <input  type="checkbox" value="Gitter help rooms" > <label style="text-align: left">Gitter help rooms</label></div>
+                           <div class="row"> <input  type="checkbox" value="Videos" > <label style="text-align: left">Videos</label></div>
+                           <div class="row"> <input  type="checkbox" value="Meetups" > <label style="text-align: left">City Meetups</label></div>
+                           <div class="row"> <input  type="checkbox" value="Wiki" > <label style="text-align: left">Wiki</label></div>
+                           <div class="row"> <input  type="checkbox" value="Forum" > <label style="text-align: left">Forum</label></div>
+                           <div class="row"> <input  type="checkbox" value="Additional Courses" > <label style="text-align: left">Additional Courses</label></div>
+                    </div>    
+                      
+            </div> 
+        <div class="row">
+            <div class="col-md-6"><label>Any comments or Suggestions ?</label></div>
+            <div class="col-md-6" ><textarea rows="4" placeholder="Enter your comment here.." ></textarea></div>
+            
+            </div>
+
+            <button id="submit" type="submit" class="btn btn-primary">submit</button>
+
+        </div>
+
+        </div>
+
+
+</form>
+</div>
+</div>
+</body>
+</html>
